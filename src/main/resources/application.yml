@@ -1,0 +1,26 @@
+
+
+spring:
+  servlet:
+    multipart:
+      max-request-size:
+        -1
+      max-file-size:
+        -1
+  application:
+    name: alert-service
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost/alertService
+    username: chiheb  
+    password: 1234
+    driverClassName: org.postgresql.Driver
+server:
+  port: 0
+  tomcat:
+    connection-timeout: 40000
+  
